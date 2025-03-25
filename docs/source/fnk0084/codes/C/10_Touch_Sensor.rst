@@ -193,16 +193,16 @@ The following is the program code:
 .. image:: ../_static/imgs/10_Touch_Sensor/Chapter10_09png
     :align: center
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_10.2_TouchLamp/Sketch_10.2_TouchLamp.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_09.2_TouchLamp/Sketch_09.2_TouchLamp.ino
     :linenos: 
     :language: c
     :dedent:
 
-Due to different operating environments, the return value of the function touchRead() may not be the same or similar. Therefore, with the help of Project 10.1, we can know the return values of touchRead() in different states, and based on these return values, we can set a valid threshold range for the touch function.
+Due to different operating environments, the return value of the function touchRead() may not be the same or similar. Therefore, with the help of Project 09.1, we can know the return values of touchRead() in different states, and based on these return values, we can set a valid threshold range for the touch function.
 
 For example, when touchRead() returns a value greater than 200000, we consider the touch function to be triggered by a human. Similarly, when the return value of touchRead() is less than 60000, we consider that the touch function has not been triggered by someone. Note that the threshold range here can be modified by users according to their own conditions
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_10.2_TouchLamp/Sketch_10.2_TouchLamp.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_09.2_TouchLamp/Sketch_09.2_TouchLamp.ino
     :linenos: 
     :language: c
     :lines: 8-9
@@ -210,7 +210,7 @@ For example, when touchRead() returns a value greater than 200000, we consider t
 
 In loop(), first determine whether the touch was detected. If yes, print some messages, flip the state of the LED, and set the flag bit **isProcessed** to true to avoid repeating the program after the touch was successful.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_10.2_TouchLamp/Sketch_10.2_TouchLamp.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_09.2_TouchLamp/Sketch_09.2_TouchLamp.ino
     :linenos: 
     :language: c
     :lines: 17-23
@@ -218,7 +218,7 @@ In loop(), first determine whether the touch was detected. If yes, print some me
 
 It then determines if the touch key is released, and if so, prints some messages and sets the isProcessed to false to avoid repeating the process after the touch release and to prepare for the next touch probe.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_10.2_TouchLamp/Sketch_10.2_TouchLamp.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_09.2_TouchLamp/Sketch_09.2_TouchLamp.ino
     :linenos: 
     :language: c
     :lines: 24-29

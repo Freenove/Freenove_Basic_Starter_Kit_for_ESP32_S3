@@ -52,7 +52,7 @@ C language
    :caption: What's next?
    :glob:
 
-   Python/What_s_next.rst
+   What_s_next.rst
 
 .. toctree::
    :maxdepth: 1

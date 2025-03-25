@@ -167,14 +167,14 @@ As shown in the picture above, as long as the handle of the potentiometer is rot
 
 The following is the code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_09.1_ADC/Sketch_09.1_ADC.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_08.1_ADC/Sketch_08.1_ADC.ino
     :linenos: 
     :language: c
     :dedent:
 
 In loop(), use the analogRead() function to obtain the input ADC value of the potentiometer, calculate the voltage value of the potentiometer according to the formula in the previous knowledge point, and print it out through the serial port.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_09.1_ADC/Sketch_09.1_ADC.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_08.1_ADC/Sketch_08.1_ADC.ino
     :linenos: 
     :language: c
     :lines: 13-15

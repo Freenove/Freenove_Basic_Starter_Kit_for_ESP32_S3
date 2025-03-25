@@ -113,7 +113,7 @@ Download the code to ESP32-S3 WROOM, the terminal window will display the curren
 
 The following is the code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_13.1_Thermometer/Sketch_13.1_Thermometer.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_12.1_Thermometer/Sketch_12.1_Thermometer.ino
     :linenos: 
     :language: c
     :dedent:

@@ -121,7 +121,7 @@ Download the code to ESP32-S3 WROOM, press the push button switch and the buzzer
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.1_Doorbell/Sketch_07.1_Doorbell.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_06.1_Doorbell/Sketch_06.1_Doorbell.ino
     :linenos: 
     :language: c
     :dedent:
@@ -153,14 +153,14 @@ Download the code to ESP32-S3 WROOM, press the button, then alarm sounds. And wh
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.2_Aleror/Sketch_07.2_Aleror.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_06.2_Aleror/Sketch_06.2_Aleror.ino
     :linenos: 
     :language: c
     :dedent:
 
 The code is the same as the active buzzer logically, but the way to control the buzzer is different. Passive buzzer requires PWM of certain frequency to control, so you need to create a PWM channel through ledcAttachChannel(). Here ledcWriteTone() is designed to generating square wave with variable frequency and duty cycle fixed to 50%, which is a better choice for controlling the buzzer.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.2_Aleror/Sketch_07.2_Aleror.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_06.2_Aleror/Sketch_06.2_Aleror.ino
     :linenos: 
     :language: c
     :lines: 14-15
@@ -168,7 +168,7 @@ The code is the same as the active buzzer logically, but the way to control the 
 
 In the while cycle of main function, when the button is pressed, subfunction alert() will be called and the alertor will issue a warning sound. The frequency curve of the alarm is based on the sine curve. We need to calculate the sine value from 0 to 360 degree and multiply a certain value (here is 500) and plus the resonant frequency of buzzer. 
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.2_Aleror/Sketch_07.2_Aleror.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_06.2_Aleror/Sketch_06.2_Aleror.ino
     :linenos: 
     :language: c
     :lines: 27-36
@@ -176,7 +176,7 @@ In the while cycle of main function, when the button is pressed, subfunction ale
 
 If you want to close the buzzer, just set PWM frequency of the buzzer pin to 0.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_07.2_Aleror/Sketch_07.2_Aleror.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_06.2_Aleror/Sketch_06.2_Aleror.ino
     :linenos: 
     :language: c
     :lines: 33-33

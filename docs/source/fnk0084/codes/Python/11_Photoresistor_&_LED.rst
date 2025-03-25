@@ -79,7 +79,7 @@ The circuit of this project is similar to project Soft Light. The only differenc
 Code
 ====================================
 
-Move the program folder “Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
+Move the program folder “Freenove_Basic_Starter_Kit_for_ESP32_S3/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
 
 Codes of this project is logically the same as the project :ref:`Soft Light <Soft_Light>`.
 
@@ -93,7 +93,7 @@ Click “Run current script”. Cover the photoresistor with your hands or illum
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/11.1_NightLamp/NightLamp.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/10.1_NightLamp/NightLamp.py
     :linenos: 
     :language: python
     :lines: 1-20

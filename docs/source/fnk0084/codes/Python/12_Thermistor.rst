@@ -98,7 +98,7 @@ The circuit of this project is similar to the one in the last chapter. The only 
 Code
 =============================
 
-Move the program folder “Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
+Move the program folder “Freenove_Basic_Starter_Kit_for_ESP32_S3/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
 
 Open “Thonny”, click “This computer” -> “D:” -> “Micropython_Codes” -> “Thermometer” and double click “Thermometer.py”. 
 
@@ -117,7 +117,7 @@ Click “Run current script” and “Shell” will constantly display the curre
 
 The following is the code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/12.1_Thermometer/Thermometer.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/11.1_Thermometer/Thermometer.py
     :linenos: 
     :language: python
     :lines: 1-18

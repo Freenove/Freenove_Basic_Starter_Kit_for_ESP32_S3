@@ -58,11 +58,11 @@ Connect Freenove ESP32-S3 to the computer with USB cable.
 Code
 ===============================
 
-Move the program folder “Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
+Move the program folder “Freenove_Basic_Starter_Kit_for_ESP32_S3/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
 
 Open “Thonny”, click “This computer” -> “D:” -> “Micropython_Codes” -> “Serial_Print” and double “Serial_Print.py”. 
 
-08.1_Serial_Print
+07.1_Serial_Print
 -------------------------------
 
 .. image:: ../_static/imgs/8_Serial_Communication/Chapter08_09.png
@@ -75,7 +75,7 @@ Click “Run current script” and observe the changes of “Shell”, which wil
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.1_Serial_Print/Serial_Print.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/07.1_Serial_Print/Serial_Print.py
     :linenos: 
     :language: python
     :dedent:
@@ -136,7 +136,7 @@ Reference
     
     **UART.any():** Determine whether there is data in serial ports. If yes, return the number of bytes; Otherwise, return 0.
 
-Project 8.2 Serial Read and Write
+Project Serial Read and Write
 ******************************************
 
 From last section, we use serial port on Freenove ESP32-S3 to send data to a computer, now we will use that to receive data from computer.

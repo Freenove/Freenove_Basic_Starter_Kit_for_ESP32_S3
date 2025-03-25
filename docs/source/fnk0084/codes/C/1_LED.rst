@@ -133,7 +133,7 @@ According to the circuit, when the GPIO2 of ESP32-S3 WROOM output level is high,
 
 Upload the following Sketch: 
 
-**Freenove_Ultimate_Starter_Kit_for_ESP32_S3\\Sketches\\Sketch_01.1_Blink.**
+**Freenove_Basic_Starter_Kit_for_ESP32_S3\\Sketches\\Sketch_01.1_Blink.**
 
 Before uploading the code, click " **Tools** ", " **Board** " and select " **ESP32S3 Dev Module** ".
 

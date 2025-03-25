@@ -72,7 +72,7 @@ This project is designed to make a flowing water lamp. Which are these actions: 
 FlowingLight
 -----------------------------
 
-Move the program folder " **Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Codes** " to disk(D) in advance with the path of " **D:/Micropython_Codes** ".
+Move the program folder " **Freenove_Basic_Starter_Kit_for_ESP32_S3/Python/Python_Codes** " to disk(D) in advance with the path of " **D:/Micropython_Codes** ".
 
 Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "03.1_FlowingLight" and double click "FlowingLight.py".
 

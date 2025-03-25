@@ -152,7 +152,7 @@ Circuit
 Code
 ===============================
 
-Move the program folder “Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
+Move the program folder “Freenove_Basic_Starter_Kit_for_ESP32_S3/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
 
 Open “Thonny”, click “This computer” -> “D:” -> “Micropython_Codes” -> “AnalogRead and then click “AnalogRead.py”. 
 
@@ -169,7 +169,7 @@ Click “Run current script” and observe the message printed in “Shell”.
 
 The following is the code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/09.1_AnalogRead/AnalogRead.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.1_AnalogRead/AnalogRead.py
     :linenos: 
     :language: python
     :lines: 1-15
@@ -177,7 +177,7 @@ The following is the code:
 
 Import Pin, ADC modules.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/09.1_AnalogRead/AnalogRead.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.1_AnalogRead/AnalogRead.py
     :linenos: 
     :language: python
     :lines: 1-2
@@ -185,7 +185,7 @@ Import Pin, ADC modules.
 
 Turn on and configure the ADC with the range of 0-3.3V and the data width of 12-bit data width.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/09.1_AnalogRead/AnalogRead.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.1_AnalogRead/AnalogRead.py
     :linenos: 
     :language: python
     :lines: 4-6
@@ -193,7 +193,7 @@ Turn on and configure the ADC with the range of 0-3.3V and the data width of 12-
 
 Read ADC value once every 100 millisecods, convert ADC value and print these data to “Shell”.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/09.1_AnalogRead/AnalogRead.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.1_AnalogRead/AnalogRead.py
     :linenos: 
     :language: python
     :lines: 9-13
