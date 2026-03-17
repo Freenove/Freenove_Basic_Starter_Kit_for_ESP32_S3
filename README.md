@@ -1,86 +1,25 @@
-## Freenove_Basic_Starter_Kit_for_ESP32_S3
+ESP32 S3 FREENOVE RetroGo 1.45 - Freenove ESP32-S3 WROOM CAM Build Info Build Date: $(date) Build Host: macOS 13.6.0 Build Tool: rg_tool.py (ESP-IDF v4.4.6) Compiler: xtensa-esp32s3-elf-gcc 8.4.0
 
-A kit with a Freenove® ESP32-S3 Board for learning programming and electronics.
+Target Device: Freenove ESP32-S3 WROOM CAM Chip Model: ESP32-S3 Flash Size: 16MB PSRAM Size: 8MB @ 80MHz (Octal Mode) Firmware Components:
 
-<img src='Basic.jpg' width='70%'/>
+Bootloader: 21,552 bytes (bootloader/bootloader.bin) Launcher: 923,840 bytes (launcher/launcher.bin) Retro-Core: 546,464 bytes (retro-core/retro-core.bin) Full Image: 2,031,616 bytes (firmware/RetroGo-1.45_ESP32_S3_WROOM_FREENOVE.img)
 
-ESP32-S3 chip is manufactured by Espressif®.
->Espressif® is a trademark of Espressif Systems (Shanghai) Co.Ltd (https://www.espressif.com/).
+Partition Layout: Address Size Type Purpose 0x0000 - 0x8FFF Boot Bootloader 0x9000 - 0xCFFF NVS Non-volatile Storage 0xD000 - 0xEFFF OTA OTA Data 0xF000 - 0xFFFF PHY PHY Init Data 0x10000 - 0xFFFFF App Launcher App (960KB) 0x100000 - 0x1EFFFF App Retro-Core App (960KB)
 
-Freenove ESP32-S3 Board can be uploaded code using Arduino® IDE.
-> Arduino® is a trademark of Arduino LLC (https://www.arduino.cc/).
+Included Emulators: Game Boy / Game Boy Color (gnuboy) Game & Watch (gw-emulator) NES / Famicom (nofrendo) Hardware Configuration: CPU Frequency: 240MHz (Dual Core) Display: ILI9341 320x240 @ 40MHz SPI Audio: I2S Digital Output (MAX98357A) Buttons: 11 Game Buttons (GPIO Digital Input) Storage: Internal Flash (SD Card functionality disabled)
 
-<img src='ESP32S3_Pinout.png' width='100%'/>
+GPIO Mapping: Display (ILI9341): MOSI: GPIO12, CLK: GPIO48, CS: GPIO14 DC: GPIO47, RST: GPIO3, BLK: GPIO2 Audio (I2S): BCLK: GPIO5, WS: GPIO6, DIN: GPIO7
 
-### Download
+Game Buttons: UP: GPIO0, DOWN: GPIO1, LEFT: GPIO15, RIGHT: GPIO16 A: GPIO17, B: GPIO18, SELECT: GPIO8, START: GPIO9
 
-Click the green "Code" button, then click "Download ZIP" button in the pop-up window.  
-Do NOT click the "Open in Desktop" button, it will lead you to install Github software.
+MENU: GPIO10, OPTION: GPIO11, X: GPIO13 Build Options: RG_ENABLE_PSRAM: Enabled RG_ENABLE_CPU_240MHZ: Enabled RG_ENABLE_SPI_80MHZ: Enabled RG_ENABLE_SD_HIGHSPEED: Disabled RG_ENABLE_NETWORKING: Enabled RG_ENABLE_PROFILING: Disabled RG_BUILD_RELEASE: Disabled
 
-> If you meet any difficulties, please contact our technical team for help.
+Notes: This firmware is designed specifically for Freenove ESP32-S3 WROOM CAM. Camera functionality is disabled to save GPIO resources. SD Card functionality is temporarily disabled to avoid GPIO conflicts.
 
-### Use
+Audio output requires an external MAX98357A module.
 
-1. Download the ZIP file as above.
-2. Unzip it and you will get a folder contains tutorials and related files.
-3. Please start with "Start Here.pdf".
+Display requires an external ILI9341 module.
 
-### Support
+Please verify hardware connections are correct before flashing.
 
-Freenove provides free and quick customer support. Including but not limited to:
-
-* Quality problems of products
-* Problems of products when used
-* Questions of learning and creation
-* Opinions and suggestions
-* Ideas and thoughts
-
-Please send an email to:
-
-[support@freenove.com](mailto:support@freenove.com)
-
-We will reply within one working day.
-
-### Purchase
-
-Please visit the following page to purchase our products:
-
-http://freenove.com/store
-
-Business customers please contact us through the following email address:
-
-[sale@freenove.com](mailto:sale@freenove.com)
-
-### About
-
-Freenove provides open source electronic products and services.
-
-Freenove is committed to helping customers learn programming and electronic knowledge, quickly implement product prototypes, realize their creativity and launch innovative products. Our services include:
-
-* Kits for learning programming and electronics
-* Kits compatible with Arduino®, Raspberry Pi®, micro:bit®, etc.
-* Kits for robots, smart cars, drones, etc.
-* Components, modules and tools
-* Design and customization
-
-To learn more about us or get our latest information, please visit our website:
-
-http://www.freenove.com
-
-### Copyright
-
-All the files in this repository are released under [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/).
-You can find a copy of the license in this repository.
-
-![markdown](https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png)
-
-> It means you can use these files on your own derived works, in part or completely. But not for commercial use.
-
-Freenove® brand and logo are trademarks of Freenove Creative Technology Co., Ltd. Must not be used without permission.
-
-Other registered trademarks and their owners appearing in this repository:
-
-Arduino® is a trademark of Arduino LLC (https://www.arduino.cc/).  
-Raspberry Pi® is a trademark of Raspberry Pi Foundation (https://www.raspberrypi.org/).  
-micro:bit® is a trademark of Micro:bit Educational Foundation (https://www.microbit.org/).  
-Espressif® is a trademark of Espressif Systems (Shanghai) Co.Ltd (https://www.espressif.com/).
+Technical Support: Hardware Setup Guide: docs/HARDWARE_SETUP.md Flashing Guide: docs/FLASHING_GUIDE.md Project Homepage: https://github.com/ducalex/retro-go
